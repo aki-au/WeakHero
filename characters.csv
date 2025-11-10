@@ -1,0 +1,8 @@
+id,name,universe,prompt_1,prompt_2,prompt_3,one_liner,image
+gray,Gray Yeon,Weak Hero,hyper-analytical strategist; quiet intensity; minimal motion,stoic; disciplined; uses environment as weapon,order over chaos; surgical precision,"You win fights before they start. You are calm, precise, unshakable.",assets/characters/gray.jpg
+ben,Ben Park,Weak Hero,charismatic protector; fair but fearless,raw physical power with warmth and loyalty,frontline leader; stabilizing presence; heart before ego,"Protector energy. Strong first, kind always.",assets/characters/ben.jpg
+alex,Alex Go,Weak Hero,loyal teammate; practical and steady,planner who keeps chaos in check; quiet competence,dependable friend; balanced warmth and focus,"The glue: steady hands, steady heart.",assets/characters/alex.jpg
+eugene,Eugene Gale,Weak Hero,curious observer; analytic mind; collector of facts,strategic thinker; loyal researcher,driven by understanding rather than dominance,Insight is your edge. You are smart,assets/characters/eugene.jpg
+stephen,Stephen Ahn,Weak Hero,determined underdog; protective of others,self-disciplined and quietly intense,fights through pain with stubborn resolve,"Enduring spirit: tough, loyal, relentless. (FAV CHARACTER)",assets/characters/stephen.jpg
+donald,Donald Na,Weak Hero,calculating leader; immaculate composure,ruthless ambition; disciplined control,strategist who values power and order,"Control is your weapon. You are smart, ruthless, unstoppable.",assets/characters/donald.jpg
+wolf,Wolf Keum,Weak Hero,feral adrenaline; lives for the fight,reckless energy; thrill-seeking aggression,chaos as oxygen; dominance through motion,"Wild heart: untamed, fearless, unstoppable.",assets/characters/wolf.jpg
