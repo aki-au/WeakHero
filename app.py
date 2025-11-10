@@ -13,15 +13,15 @@ st.set_page_config(
 SAMPLE_SIZE = 20 
 MIN_PICKS = 5
 
-imgs_df   = pd.read_csv("/Users/alakarthika/Documents/Personal_Projects/WeakHero/assets/files/images.csv")
-chars_df  = pd.read_csv("/Users/alakarthika/Documents/Personal_Projects/WeakHero/characters.csv")
-labels_df = pd.read_csv("/Users/alakarthika/Documents/Personal_Projects/WeakHero/explain_labels.csv")
+imgs_df   = pd.read_csv("assets/files/images.csv")
+chars_df  = pd.read_csv("characters.csv")
+labels_df = pd.read_csv("explain_labels.csv")
 
-E_img = np.load("/Users/alakarthika/Documents/Personal_Projects/WeakHero/assets/files/embeddings/images.npy")  
-with open("/Users/alakarthika/Documents/Personal_Projects/WeakHero/assets/files/embeddings/char_embeds.json") as f:
+E_img = np.load("assets/files/embeddings/images.npy")  
+with open("assets/files/embeddings/char_embeds.json") as f:
     char_embeds = {k: np.array(v) for k, v in json.load(f).items()}
 
-with open("/Users/alakarthika/Documents/Personal_Projects/WeakHero/assets/files/embeddings/label_embeds.json") as f:
+with open("assets/files/embeddings/label_embeds.json") as f:
     label_embeds = {k: np.array(v) for k, v in json.load(f).items()}
 
 N_IMAGES = len(imgs_df)
@@ -103,9 +103,12 @@ else:
     # labels (vibes)
     label_scores = rank_labels(u, label_embeds, baseline)
     top_vibes = label_scores[:3]
+    img_path = find_closest_image(top_char_row['name'], 'assets/characters')
 
     st.header(f"Your Match: {top_char_row['name']}")
     st.caption(top_char_row["one_liner"])
+    st.image(img_path, width=200)
+    
 
     st.subheader("Your match profile~")
     for lab, sim in top_vibes:
